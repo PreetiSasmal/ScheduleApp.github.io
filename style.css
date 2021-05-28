@@ -1,0 +1,119 @@
+
+*{
+    box-sizing: border-box;
+    margin:0;    
+}
+html{
+    min-height: 100%;
+    max-height: 200%; 
+    border:10px solid;
+    border-image-source: url(https://mdn.mozillademos.org/files/13060/border-image.png);
+    border-image-slice: 40;
+    border-image-repeat: round;
+    background:linear-gradient(135deg,#F00B51,#7366FF); 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;   
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:15px;
+}
+.titles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:10px;
+}
+::-webkit-scrollbar {
+    width: 0.7rem;
+    
+  }
+   
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(black,gray,white,grey,black); 
+    background-size: 100% 100%;  
+    border-radius: 60px;
+  }
+::-webkit-scrollbar-track{
+      background-color:#e76088;
+}
+.container{
+    height: 100%;
+    width:100%;
+    
+    color: rgb(253, 250, 237);
+    
+}
+/**comma mean this style is giving to all the class**/
+
+.input-container{
+    border: 1px solid black;
+    box-shadow: inset 4px 4px 30px black;
+}
+.input-container{
+    height: 20vh;    
+    /* margin: auto; */
+    width:100%;
+    padding-top: 40px;
+}
+.task-container{
+    height: 100%;
+ 
+}
+
+.task-list{
+    padding-left: 0;
+    height:100%
+}
+.task-input{
+    margin:auto;
+    font-size: 1.5 rem;
+    width:36%;
+    box-shadow: 7px 7px 6px black;
+    height:3rem;
+    /* missed */
+    text-align: center;
+    display: block;
+}
+.task-container li{
+    font-size: 1.5 rem;
+    /* missed */
+    list-style: none;
+    color: #f00b50fa;
+    font-weight: bolder;
+    background-color:#ffb6cc;
+    font-family: cursive;
+    width: 40%;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset -7px -7px 9px black;
+    border-radius: 30px;
+    overflow:hidden;
+    
+}
+
+
+@media screen and (max-width:768px){
+    .task-input,
+    .task-container li{
+        width: 70%;
+    }
+}
+@media screen and (max-width:290px){
+    .title{
+        font-size: x-large;
+    }
+    .titles{
+        font-size: xx-small;
+    }
+}
+
+
+
+
